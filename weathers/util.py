@@ -11,7 +11,7 @@ def get_city_code(province, city, county):
     """
 
     def get_city_ids():
-        city_id_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), "city_id")
+        city_id_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), "city_id.py")
         city_ids = {}
         with open(city_id_path, encoding="utf-8") as f:
             for line in f:
