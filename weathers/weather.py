@@ -16,7 +16,7 @@ class DayWeatherInfo(object):
 
 
 def parse(weather_data):
-    soup = BeautifulSoup(weather_data)
+    soup = BeautifulSoup(weather_data,'lxml')
     div_7d = soup.find("div", {'id': "7d"})
     weather_infos = []
     if div_7d:
